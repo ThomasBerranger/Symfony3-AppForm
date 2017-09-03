@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>View page</title>
+</head>
+<body>
+<h1>Tout les produits :</h1>
+{% for product in products %}
+    <ul>
+        <li><a href="{{ path('edit', {'id':product.id}) }}" style="color: black; text-decoration: none;">{{ product.name }} -- Prix : {{ product.price }} -- Catégorie : {{ product.category.id }}</a> --
+            <a href="{{ path('delete', {'id':product.id}) }}">Supprimer</a></li>
+    </ul>
+{% endfor %}
+</body>
+</html>
