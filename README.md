@@ -1,5 +1,4 @@
 AppForm
 =======
 
-A Symfony project created on September 1, 2017, 12:28 pm.
-"# Symfony3-AppForm" 
+CRUD with Many To One relationship simple and effective, realized under symfony 3
